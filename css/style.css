@@ -3,13 +3,13 @@
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+/* @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @font-face {
     font-family: "Righteous";
     src: url("../fonts/BalooChettan-Regular.ttf");
     src: url("../fonts/BalooChettan-Regular.ttf");
-}
+} */
 
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
@@ -19,7 +19,7 @@
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
-@import url(animate.min.css);
+/* @import url(animate.min.css);
 @import url(normalize.css);
 @import url(icomoon.css);
 @import url(css/font-awesome.min.css);
@@ -29,7 +29,7 @@
 @import url(slick.css);
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
-@import url(nice-select.css);
+@import url(nice-select.css); */
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -238,6 +238,15 @@ button {
     background-repeat: no-repeat;
 }
 
+/* Highlighted code for mobile responsiveness */
+@media (max-width: 768px) {
+    .header_section {
+        background-size: cover; 
+        background-position: top center;
+        height: 100vh; 
+    }
+}
+
 .header_bg {
     background: #000;
 }
@@ -286,23 +295,6 @@ button {
     padding: 0px 0px 220px 0px;
 }
 
-/* .banner_taital_main {
-    width: 100%;
-    float: left;
-    padding-left: 100px;
-    padding-top: 100px;
-} */
-
-/* .banner_taital {
-    width: 100%;
-    float: left;
-    font-size: 60px;
-    color: #fefefd;
-    font-weight: bold;
-    padding-bottom: 0px;
-    line-height: 70px;
-} */
-
 .banner_text {
     width: 100%;
     float: left;
@@ -341,140 +333,6 @@ button {
     background-color: #ffffff;
     color: #252f2d;
 }
-
-.video_bt {
-    width: 100%;
-    float: left;
-    padding-top: 120px;
-    padding-left: 20px;
- } 
-
-.play_icon img {
-    width: 80px;
-}
-
-.play_icon {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 5;
-}
-
-.play_icon::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    width: 90px;
-    height: 90px;
-    transform: translate(-50%, -50%);
-    background-color: #f5c729;
-    border-radius: 100%;
-    animation: fadeEffect 1.3s infinite ease;
-    box-shadow: 0px 0px 10px 0px;
-    right: initial;
-    margin: 0 auto;
-    z-index: -1;
-} 
-
-/* @keyframes fadeEffect {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1.2);
-        opacity: 0;
-    }
-} */
-
-/* .carousel-inner,
-.carousel,
-.carousel-item,
-.container,
-.fill {
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-} */
-
-/* .slide-wrapper {
-    display: inline;
-}
-
-.slide-wrapper .container {
-    padding: 0;
-} */
-
-
-/*------------------------------ vertical bootstrap slider----------------------------*/
-
-.banner_section .carousel-inner>.carousel-item.carousel-item-next,
-.banner_section .carousel-inner>.carousel-item.active.carousel-item-right {
-    transform: translate3d(0, 100%, 0);
-    -webkit-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    top: 0;
-}
-
-.banner_section .carousel-inner>.carousel-item.carousel-item-prev,
-.banner_section .carousel-inner>.carousel-item.active.carousel-item-left {
-    transform: translate3d(0, -100%, 0);
-    -webkit-transform: translate3d(0, -100%, 0);
-    -moz-transform: translate3d(0, -100%, 0);
-    -ms-transform: translate3d(0, -100%, 0);
-    -o-transform: translate3d(0, -100%, 0);
-    top: 0;
-}
-
-.banner_section .carousel-inner>.carousel-item.next.carousel-item-left,
-.banner_section .carousel-inner>.carousel-item.carousel-item-prev.carousel-item-right,
-.banner_section .carousel-inner>.carousel-item.active {
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    ;
-    -moz-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    top: 0;
-}
-
-
-/*------------------------------- vertical carousel indicators ------------------------------*/
-
-.carousel-indicators {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 20px;
-    right: 10px;
-    left: auto;
-    width: auto;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    display: none;
-}
-
-.carousel-indicators li {
-    display: block;
-    margin-bottom: 5px;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    background-color: #0fbdd7
-}
-
-.carousel-indicators li.active {
-    margin-bottom: 5px;
-    background: #ffffff;
-}
-
 
 /* banner section end */
 
